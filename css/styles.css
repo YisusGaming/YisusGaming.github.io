@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 /* SCROLLBAR */
@@ -93,12 +94,22 @@ ul {
     }
 }
 
+.menu-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 30px;
+    z-index: 2;
+    font-size: 1.5rem;
+    display: none;
+}
+
 /* SHOWCASE / Newest project */
 .showcase {
     width: 100%;
     height: 450px;
     background: url('../assets/imgs/showcase0.jpg') no-repeat center center/cover;
-    padding-bottom: 50px;
+    padding: 50px;
     margin-bottom: 20px;
     padding-left: 30px;
     display: flex;
@@ -188,4 +199,120 @@ ul {
     text-align: center;
     font-size: 30px;
     margin-bottom: 20px;
+}
+
+.social .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social .links a {
+    margin: 0 30px;
+
+}
+
+.social .links a i {
+    font-size: 3rem;
+}
+
+.social .links a:hover {
+    color: #b3b3b3;
+}
+
+/* FOOTER */
+
+.footer-links {
+    background: #2f3640;
+    color: #616161;
+    font-size: 12px;
+    padding: 35px 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.footer-container ul {
+    margin: 0 auto;
+}
+
+.footer-container ul li a:hover {
+    color: #b3b3b3;
+}
+
+.footer {
+    background: #2f3640;
+    color: #616161;
+    font-size: 12px;
+    padding: 20px 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#nav-go-back {
+    display: none;
+}
+
+.strong-link {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.strong-link:hover {
+    color: #b3b3b3;
+}
+
+@media (max-width: 720px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-main ul.nav-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #2f3640;
+        height: 100%;
+        padding: 30px;
+        opacity: .9;
+        transform: translateX(-400px);
+        transition: transform .5s ease-in-out;
+    }
+
+    .nav-main ul.nav-menu.show {
+        transform: translateX(-20px);
+    }
+
+    .nav-main ul.nav-menu-right {
+        margin-right: 40px;
+    }
+
+    #nav-go-back {
+        display: block;
+    }
+
+    .project-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .showcase {
+        height: 350px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .project-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .project-cards img {
+        height: 270px;
+    }
 }

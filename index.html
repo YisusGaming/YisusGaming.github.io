@@ -19,8 +19,12 @@
 </head>
 <body>
     
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+
     <div class="container">
-        <nav class="nav-main">
+        <nav id="nav-main" class="nav-main">
             <img src="assets/icons/icon.png" alt="Yisus LOGO" class="nav-brand">
             <ul class="nav-menu">
                 <li>
@@ -34,6 +38,9 @@
                 </li>
                 <li>
                     <a href="#">Información proyectos</a>
+                </li>
+                <li>
+                    <a href="#social">Contaco</a>
                 </li>
             </ul>
             <ul class="nav-menu-right">
@@ -50,56 +57,90 @@
         
         <header class="showcase">
             <h2>¡Proyecto más reciente!</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam alias reprehenderit quas est deleniti sequi, vero optio veniam nihil iste beatae et ducimus, aliquid autem, ab quae velit accusamus sunt?</p>
+                <p>¡Lo estas viendo! Esta página web es mi proyecto más reciente.</p>
             <a class="btn" href="#">¡Quiero verlo! <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </header>
 
         <!-- OTHERS PROJECTS -->
         <div class="project-cards">
-            <div>
+            <div id="project-card-1">
                 <img src="./assets/imgs/project-default.jpg" alt="Proyecto 1">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, adipisci assumenda distinctio nam totam error dolore omnis voluptatem optio. Quia?</p>
+                <h3>No hay proyectos aquí!</h3>
+                <p>Parece ser que aún no se ha añadido un proyecto... Prueba en <strong class="strong-link" data-link="#" >Información proyectos</strong>.</p>
                 <a href="#">Leer más <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
-            <div>
+            <div id="project-card-2">
                 <img src="./assets/imgs/project-default.jpg" alt="Proyecto 2">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, adipisci assumenda distinctio nam totam error dolore omnis voluptatem optio. Quia?</p>
+                <h3>No hay proyectos aquí!</h3>
+                <p>Parece ser que aún no se ha añadido un proyecto... Prueba en <strong class="strong-link" data-link="#" >Información proyectos</strong>.</p>
                 <a href="#">Leer más <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
-            <div>
+            <div id="project-card-3">
                 <img src="./assets/imgs/project-default.jpg" alt="Proyecto 3">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, adipisci assumenda distinctio nam totam error dolore omnis voluptatem optio. Quia?</p>
+                <h3>No hay proyectos aquí!</h3>
+                <p>Parece ser que aún no se ha añadido un proyecto... Prueba en <strong class="strong-link" data-link="#" >Información proyectos</strong>.</p>
                 <a href="#">Leer más <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
-            <div>
+            <div id="project-card-4">
                 <img src="./assets/imgs/project-default.jpg" alt="Proyecto 4">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, adipisci assumenda distinctio nam totam error dolore omnis voluptatem optio. Quia?</p>
+                <h3>No hay proyectos aquí!</h3>
+                <p>Parece ser que aún no se ha añadido un proyecto... Prueba en <strong class="strong-link" data-link="#" >Información proyectos</strong>.</p>
                 <a href="#">Leer más <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
         </div>
 
         <!-- SOCIAL MEDIA -->
-        <section class="social">
+        <section id="social" class="social">
             <p>¡Sigueme en mis redes!</p>
             <p>¿Quieres contactarme? Estas redes tambien sirven!</p>
             <div class="links">
-                <a href="#">
+                <a href="https://twitter.com/jesusgameroom" target="_blank">
                     <i class="fab fa-twitter"></i>
                 </a>
-                <a href="#">
+                <a href="https://www.youtube.com/channel/UCdteRYDY0M3xjRQD7YhRA1A" target="_blank">
                     <i class="fab fa-youtube"></i>
                 </a>
-                <a href="#">
+                <a href="https://www.instagram.com/yisusgaming18/" target="_blank">
                     <i class="fab fa-instagram"></i>
                 </a>
             </div>
         </section>
 
     </div>
+
+    <div class="footer-links">
+        <div class="footer-container">
+            <ul>
+                <li>
+                    <a href="#">Principal</a>
+                </li>
+                <li>
+                    <a href="#">Proyectos en desarrollo</a>
+                </li>
+                <li>
+                    <a href="#">Programas y Aplicaciones</a>
+                </li>
+                <li>
+                    <a href="#">Información proyectos</a>
+                </li>
+            </ul>
+            <ul>
+                <p>Sitio web creado por Yisus. Muchas gracias por visitar!</p>
+                <li>
+                    <a id="nav-go-back" href="#nav-main">Volver a navegación</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <h3><i class="fa-solid fa-copyright"></i> YisusGaming</h3>
+    </footer>
+
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- CUSTOM JS -->
+    <script src="./js/main.js"></script>
 
 </body>
 </html>
