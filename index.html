@@ -5,8 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página principal</title>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+    <!-- CUSTOM -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>¡Hola, Mundo!</h1>
+    
+    <div class="container">
+        <nav class="nav-main">
+            <img src="assets/icons/icon.png" alt="Yisus LOGO" class="nav-brand">
+            <ul class="nav-menu">
+                <li>
+                    <a href="#">Principal</a>
+                </li>
+                <li>
+                    <a href="#">Proyectos en desarrollo</a>
+                </li>
+                <li>
+                    <a href="#">Programas y Aplicaciones</a>
+                </li>
+                <li>
+                    <a href="#">Información proyectos</a>
+                </li>
+            </ul>
+            <ul class="nav-menu-right">
+                <li>
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <hr style="border-color: rgb(180, 180, 180); background-color: rgb(180, 180, 180); height: 5px;">
+        
+        <!-- NEWEST PROJECT -->
+        
+        <header class="showcase">
+            <h2>¡Proyecto más reciente!</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam alias reprehenderit quas est deleniti sequi, vero optio veniam nihil iste beatae et ducimus, aliquid autem, ab quae velit accusamus sunt?</p>
+            <a class="btn" href="#">¡Quiero verlo! <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </header>
+
+        <!-- OTHERS PROJECTS -->
+        <div class="project-cards">
+            <div>
+                <img src="./assets/imgs/project-default.jpg" alt="Proyecto 1">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, adipisci assumenda distinctio nam totam error dolore omnis voluptatem optio. Quia?</p>
+                <a href="#">Leer más <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <div>
+                <img src="./assets/imgs/project-default.jpg" alt="Proyecto 2">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, adipisci assumenda distinctio nam totam error dolore omnis voluptatem optio. Quia?</p>
+                <a href="#">Leer más <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <div>
+                <img src="./assets/imgs/project-default.jpg" alt="Proyecto 3">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, adipisci assumenda distinctio nam totam error dolore omnis voluptatem optio. Quia?</p>
+                <a href="#">Leer más <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <div>
+                <img src="./assets/imgs/project-default.jpg" alt="Proyecto 4">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, adipisci assumenda distinctio nam totam error dolore omnis voluptatem optio. Quia?</p>
+                <a href="#">Leer más <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+
+        <!-- SOCIAL MEDIA -->
+        <section class="social">
+            <p>¡Sigueme en mis redes!</p>
+            <p>¿Quieres contactarme? Estas redes tambien sirven!</p>
+            <div class="links">
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </section>
+
+    </div>
+
 </body>
 </html>
