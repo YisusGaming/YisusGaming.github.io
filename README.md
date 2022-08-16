@@ -1,10 +1,9 @@
-# Información
-> <!> Esta versión contiene las primeras vistas a la página.
+![YisusGaming website!](./assets/imgs/YisusGaming.png)
 
-Cualquier error, sea en código o de escritura se arreglará en la siguiente versión y se añadirá un [README](README.md) real.
+> *<!>* Mi propio sitio web!
 
-![YisusGaming](assets/imgs/YisusGaming.png)
+Este es primer sitio web hecho **enserio**, le puse esfuerzo, no solo para que se viera como yo quería, también para que estuviera lo mejor escrito posible *~~Algún error se me habrá escapado por ahí o algo lol~~* .
 
-> <!> Lista de cosas por hacer
+Espero les **guste** y espero poder usarlo para reunir todos mis proyectos!
 
-[Pendientes](ToDo.md)
+> *<!>* Creado por YisusGaming.
