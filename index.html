@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página web de YisusGaming!">
+    <meta name="keywords" content="yisus, yisusgaming, web, website, página web, desarrollo web, desarrollo, juegos, yisus gaming">
+    <meta name="author" content="YisusGaming">
+    <meta name="copyright" content="YisusGaming">
     <title>Página principal</title>
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
@@ -16,24 +20,119 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
     <!-- CUSTOM -->
     <link rel="stylesheet" href="css/styles.css">
+    <!-- SCROLL REVEAL -->
+    <script defer src="./js/ScrollReveal.js"></script>
     <!-- ICON -->
     <link rel="shortcut icon" href="./assets/icons/website-icon.png" type="image/x-icon">
 </head>
 <body>
     
-    <div class="under-construction">
-        <div class="card-bg">
-            <h1>En construcción!</h1>
-            <p>Hola! Esta es mi página web, actualmente está en construcción debido a que estoy haciendo algunos cambios,</p>
-            <p>Pronto estara de vuelta!</p>
-            <strong>- YisusGaming</strong>
-        </div>
-    </div>
+    <nav class="navbar hidden hidden-down" id="navbar">
+        <ul>
+            <img src="./assets/icons/icon.png" alt="" class="navbar-icon">
+            <li>
+                <a href="/">Principal</a>
+            </li>
+            <li>
+                <a class="disabled" href="#">Proyectos en Desarrollo</a>
+            </li>
+            <li>
+                <a class="disabled" href="#">Programas y Aplicaciones</a>
+            </li>
+            <li>
+                <a href="project-info.html">Información Proyectos</a>
+            </li>
+            <li>
+                <a href="#contact">Contacto</a>
+            </li>
+            <li>
+                <a href="blog.html">Blog</a>
+            </li>
+        </ul>
+    </nav>
 
-    <!-- SCROLL REVEAL -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <section class="main-content">
+        <div class="card hidden hidden-right">
+            <h2 class="card-title">¿Quién soy?</h2>
+            <p class="card-body">Soy un desarrollador <a href="blog.html#:~:text=%C2%BFA%20qu%C3%A9%20me%20refiero%20cuando%20digo%20%22desarrollador%20intermedio%22%3F">"intermedio"</a>. Me encata el desarrollo web, aplicaciones de escritorio y desarrollo de videojuegos.</p>
+            <p>Ultimamente he estado aprendiendo sobre <strong>React</strong> para desarrollar mis aplicaciones.</p>
+            <p>Cree un proyecto simple para ayudadarme a practicar con <strong>React</strong>, puedes verlo en mi <a target="_blank" href="https://github.com/YisusGaming/">GitHub</a> en este repositorio: <a target="_blank" href="https://github.com/YisusGaming/react-tasks">/react-tasks/</a>.</p>
+        </div>
+        <div class="card hidden hidden-up">
+            <h2 class="card-title">Sobre la página</h2>
+            <p class="card-body">En esta página encontraras todos mis proyectos e información de los mismos, descarga de mis aplicaciones, muchos datos sobre mí y un pequeño blog con publicaciones!</p>
+            <p>La página la cree <strong>yo mismo</strong> usando <strong>HTML, CSS y JavaScript Vanilla</strong>.</p>
+        </div>
+        <div class="card hidden hidden-left">
+            <h2 class="card-title">Información sobre Contacto</h2>
+            <p class="card-body">Contactar conmigo es fácil y hay varias vías por donde puedes hacerlo, haz clic en "Contacto" en la navegación para ver todas.</p>
+            <p>Suelo responder más rápidamente en mensaje directos de <strong>Twitter</strong> o solicitudes en <strong>Discord</strong>.</p>
+            <p>Pero recomiendo que me contactes a través de <strong>correo electrónico</strong>.</p>
+        </div>
+    </section>
+
+    <hr class="section-div">
+
+    <h1 class="hidden hidden-down" id="newest-post-label">Nuevas Publicaciones</h1>
+
+    <section class="newest-post" id="posts-container">
+        <div class="card hidden hidden-left post bg-30" style="overflow-y: scroll;">
+            <h2 class="card-title"><strong style="color: lightcoral;">No se encontro la publicación</strong></h2>
+            <p class="card-body"><strong style="color: lightcoral;">No hay ninguna publicación para poner aquí.</strong></p>
+        </div>
+        <div class="card hidden hidden-left post bg-30" style="overflow-y: scroll;">
+            <h2 class="card-title"><strong style="color: lightcoral;">No se encontro la publicación</strong></h2>
+            <p class="card-body"><strong style="color: lightcoral;">No hay ninguna publicación para poner aquí.</strong></p>
+        </div>
+        <div class="card hidden hidden-left post bg-30" style="overflow-y: scroll;">
+            <h2 class="card-title"><strong style="color: lightcoral;">No se encontro la publicación</strong></h2>
+            <p class="card-body"><strong style="color: lightcoral;">No hay ninguna publicación para poner aquí.</strong></p>
+        </div>
+        <div class="card hidden hidden-left post bg-30" style="overflow-y: scroll;">
+            <h2 class="card-title"><strong style="color: lightcoral;">No se encontro la publicación</strong></h2>
+            <p class="card-body"><strong style="color: lightcoral;">No hay ninguna publicación para poner aquí.</strong></p>
+        </div>
+        <div class="card hidden hidden-left post bg-30" style="overflow-y: scroll;">
+            <h2 class="card-title"><strong style="color: lightcoral;">No se encontro la publicación</strong></h2>
+            <p class="card-body"><strong style="color: lightcoral;">No hay ninguna publicación para poner aquí.</strong></p>
+        </div>
+        <div class="card hidden hidden-left post bg-30" style="overflow-y: scroll;">
+            <h2 class="card-title"><strong style="color: lightcoral;">No se encontro la publicación</strong></h2>
+            <p class="card-body"><strong style="color: lightcoral;">No hay ninguna publicación para poner aquí.</strong></p>
+        </div>
+    </section>
+
+    <hr class="section-div">
+
+    <section class="social-media">
+        <h1>Mis Redes Sociales</h1>
+        <div class="hidden hidden-left" id="social">
+            <a href="#">Twitter</a>
+            <a href="#">YouTube</a>
+            <a href="#">Instagram</a>
+        </div>
+        <h1>Contacto</h1>
+        <div class="hidden hidden-right" id="contact">
+            <a href="#">Twitter</a>
+            <p>Discord: Yisus#0000</p>
+            <p>Correo electrónico: <strong>jesusgameroom@gmail.com</strong></p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div id="content">
+            <div>
+                <a href="#navbar">Volver a la Navegación</a>
+            </div>
+            <div>
+                <p>Página creada por YisusGaming. Gracias por visitar!</p>
+            </div>
+        </div>
+        <p>(c) YisusGaming 2022</p>
+    </footer>
+
     <!-- CUSTOM JS -->
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" type="module"></script>
 
 </body>
 </html>

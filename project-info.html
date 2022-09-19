@@ -16,33 +16,57 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
     <!-- CUSTOM -->
     <link rel="stylesheet" href="css/styles.project-info.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- SCROLL REVEAL -->
+    <script defer src="js/ScrollReveal.js"></script>
+    <!-- ICON -->
+    <link rel="shortcut icon" href="./assets/icons/website-icon.png" type="image/x-icon">
 </head>
 <body>
     <div class="container">
-        <header class="banner">
-            <a href="index.html" title="Volver"> <i class="fa-solid fa-arrow-left"></i> </a>
+        <header class="banner hidden hidden-down">
+            <!-- <a href="index.html" title="Volver"> <i class="fa-solid fa-arrow-left"></i> </a> -->
             <div class="banner-container">
                 <img src="./assets/imgs/YisusGaming.png" alt="YisusGaming">
             </div>
         </header>
 
-        <div class="nothing-here">
-            <h1>No hay nada aquí!</h1>
-            <p>No hay ningún proyecto... Por ahora...</p>
-        </div>
-
-        <!-- <div class="footer-links">
-            <div class="footer-container">
-                <ul>
-                    <p>Sitio web creado por Yisus. Muchas gracias por visitar!</p>
-                </ul>
+        <div class="projects">
+            <!-- <div class="nothing-here hidden hidden-left">
+                <h1>No hay nada aquí!</h1>
+                <p>No hay ningún proyecto... Por ahora...</p>
+            </div> -->
+            <div id="project-list">
             </div>
         </div>
-    
-        <footer class="footer">
-            <h3><i class="fa-solid fa-copyright"></i> YisusGaming</h3>
-        </footer> -->
+
+        <div class="navbar-container">
+            <nav class="navbar hidden hidden-up" id="navbar">
+                <ul>
+                    <img src="./assets/icons/icon.png" alt="" class="navbar-icon">
+                    <li>
+                        <a href="/">Principal</a>
+                    </li>
+                    <li>
+                        <a href="#">Proyectos en Desarrollo</a>
+                    </li>
+                    <li>
+                        <a href="#">Programas y Aplicaciones</a>
+                    </li>
+                    <li>
+                        <a href="project-info.html">Información Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="/#contact">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
     </div>
+    <script src="js/main.js" type="module"></script>
 </body>
 </html>
