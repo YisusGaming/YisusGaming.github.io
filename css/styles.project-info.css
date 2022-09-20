@@ -97,3 +97,9 @@
         font-size: 1.5rem;
     }
 } */
+
+@media (max-width:820px) {
+    .navbar {
+        bottom: 0;
+    }
+}
