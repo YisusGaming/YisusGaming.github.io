@@ -2,6 +2,6 @@
 
 > *<!>* Mi propio sitio web!
 
-Hola! Esta es mi página web, actualmente esta en construcción debido a que estoy haciendo algunos cambios!
+Bienvenido a mi página web, aquí encontrarás información sobre todos mis proyectos, descargas, redes de contacto y más!
 
 > *<!>* Creado por YisusGaming.

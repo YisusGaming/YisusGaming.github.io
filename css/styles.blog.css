@@ -3,6 +3,12 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
+.card {
+    max-height: 320px;
+    width: 480px;
+    overflow-y: scroll;
+}
+
 .card::before, .card::after {
     position: absolute;
     content: '';
@@ -24,4 +30,15 @@
     transform: rotateZ(50deg) translateX(-20px) translateY(-20px);
     top: -20px;
     z-index: -1;
+}
+
+@media (max-width:850px) {
+    #post-list {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #post-list .card {
+        margin: 20px auto;
+    }
 }

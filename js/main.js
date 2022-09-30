@@ -22,6 +22,13 @@ window.onload = posts.forEach((post) => {
     }
 });
 
+const youtubeLink = document.getElementById('youtube-link');
+if (youtubeLink) {
+    youtubeLink.addEventListener('click', () => {
+        alert('Hey! Estoy haciendo algunos cambios en mi canal de youtube. No está listo todavía, así que no puedes entrar por ahora');
+    });
+}
+
 /* Blog Html */
 const postList = document.getElementById("post-list");
 posts.forEach((post) => {
@@ -42,3 +49,14 @@ devProjects.forEach((project) => {
     const template = `<div class="card bg-30"><h2 class="card-title">${project.title}</h2><div style="display: flex; justify-content: center; aling-items: center;"><img src="${project.img.src}" alt="${project.img.alt}" style="max-height: 720px; max-width: 800px;"></div><p class="card-body" style="font-size:1.5rem">${project.desc}</p></div>`;
     if (devProjectList) { devProjectList.innerHTML = template + devProjectList.innerHTML; }
 });
+
+/* Navbar */
+const navbarButton = document.getElementById('show-hide-navbar');
+if (navbarButton) {
+    navbarButton.addEventListener('click', (event) => {   
+        const navbar = document.getElementById('navbar');
+        if (navbar) {
+            navbar.classList.toggle('show-navbar');
+        }
+    });
+}
