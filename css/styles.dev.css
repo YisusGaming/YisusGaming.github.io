@@ -1,0 +1,10 @@
+#dev-project-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+}
+
+.card {
+    max-width: max-content !important;
+    min-width: 320px !important;
+}

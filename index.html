@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página web de YisusGaming!">
+    <meta name="keywords" content="yisus, yisusgaming, web, website, página web, desarrollo web, desarrollo, juegos, yisus gaming, blog, vlog, blogs, vlogs, post, publicación, publicacion, publicaciones">
+    <meta name="author" content="YisusGaming">
+    <meta name="copyright" content="YisusGaming">
     <title>Página principal</title>
-    <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,133 +18,123 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
     <!-- CUSTOM -->
     <link rel="stylesheet" href="css/styles.css">
+    <!-- SCROLL REVEAL -->
+    <script defer src="./js/ScrollReveal.js"></script>
     <!-- ICON -->
     <link rel="shortcut icon" href="./assets/icons/website-icon.png" type="image/x-icon">
 </head>
 <body>
-    
-    <div class="menu-btn">
-        <i class="fas fa-bars"></i>
-    </div>
 
-    <div class="container">
-        <nav id="nav-main" class="nav-main">
-            <img src="assets/icons/icon.png" alt="Yisus LOGO" class="nav-brand">
-            <ul class="nav-menu">
-                <li>
-                    <a href="#">Principal</a>
-                </li>
-                <li>
-                    <a href="#">Proyectos en desarrollo</a>
-                </li>
-                <li>
-                    <a href="#">Programas y Aplicaciones</a>
-                </li>
-                <li>
-                    <a href="project-info.html">Información proyectos</a>
-                </li>
-                <li>
-                    <a href="#social">Contaco</a>
-                </li>
-            </ul>
-            <ul class="nav-menu-right">
-                <li>
-                    <a href="#">
-                        <i class="fas fa-search"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <hr style="border-color: rgb(180, 180, 180); background-color: rgb(180, 180, 180); height: 5px;">
-        
-        <!-- NEWEST PROJECT -->
-        
-        <header class="showcase">
-            <h2>¡Proyecto más reciente!</h2>
-                <p>¡Lo estás viendo! Esta página web es mi proyecto más reciente.</p>
-            <a class="btn" href="javascript:ShowcaseMsg();">¡Quiero verlo! <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </header>
+    <a id="show-hide-navbar"><i class="fa-solid fa-bars"></i></a>
 
-        <!-- OTHERS PROJECTS -->
-        <div class="project-cards">
-            <div id="project-card-1">
-                <img src="./assets/imgs/project-default.jpg" alt="Proyecto 1">
-                <h3>No hay proyectos aquí!</h3>
-                <p>Parece ser que aún no se ha añadido un proyecto... Prueba en <strong class="strong-link" data-link="project-info.html" >Información proyectos</strong>.</p>
-                <a href="project-info.html">Leer más <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-            <div id="project-card-2">
-                <img src="./assets/imgs/project-default.jpg" alt="Proyecto 2">
-                <h3>No hay proyectos aquí!</h3>
-                <p>Parece ser que aún no se ha añadido un proyecto... Prueba en <strong class="strong-link" data-link="project-info.html" >Información proyectos</strong>.</p>
-                <a href="project-info.html">Leer más <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-            <div id="project-card-3">
-                <img src="./assets/imgs/project-default.jpg" alt="Proyecto 3">
-                <h3>No hay proyectos aquí!</h3>
-                <p>Parece ser que aún no se ha añadido un proyecto... Prueba en <strong class="strong-link" data-link="project-info.html" >Información proyectos</strong>.</p>
-                <a href="project-info.html">Leer más <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-            <div id="project-card-4">
-                <img src="./assets/imgs/project-default.jpg" alt="Proyecto 4">
-                <h3>No hay proyectos aquí!</h3>
-                <p>Parece ser que aún no se ha añadido un proyecto... Prueba en <strong class="strong-link" data-link="project-info.html" >Información proyectos</strong>.</p>
-                <a href="project-info.html">Leer más <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
+    <nav class="navbar hidden hidden-down" id="navbar">    
+        <ul>
+            <img src="./assets/icons/icon.png" alt="" class="navbar-icon">
+            <li>
+                <a title="Página principal" href="/">Principal</a>
+            </li>
+            <li>
+                <a title="Proyectos que todavía esté desarrollando" href="dev-projects.html">Proyectos en Desarrollo</a>
+            </li>
+            <li>
+                <a title="(No Disponible) - Descarga de mis programas y aplicaciones publicadas" class="disabled" href="#">Programas y Aplicaciones</a>
+            </li>
+            <li>
+                <a title="Descripciones completas sobre mis proyectos terminados o en desarrollo" href="project-info.html">Información Proyectos</a>
+            </li>
+            <li>
+                <a title="Vías para contactarme" href="#contact">Contacto</a>
+            </li>
+            <li>
+                <a title="Un blog con publicaciones e información" href="blog.html">Blog</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="main-content">
+        <div class="card hidden hidden-right">
+            <h2 class="card-title">¿Quién soy?</h2>
+            <p class="card-body">Soy un desarrollador <a href="blog.html#:~:text=%C2%BFA%20qu%C3%A9%20me%20refiero%20cuando%20digo%20%22desarrollador%20intermedio%22%3F">"intermedio"</a>. Me encanta el desarrollo web, aplicaciones de escritorio y desarrollo de videojuegos.</p>
+            <p>Ultimamente he estado aprendiendo sobre <strong>React</strong> para desarrollar mis aplicaciones.</p>
+            <p>Cree un proyecto simple para ayudadarme a practicar con <strong>React</strong>, puedes verlo en mi <a target="_blank" href="https://github.com/YisusGaming/">GitHub</a> en este repositorio: <a target="_blank" href="https://github.com/YisusGaming/react-tasks">/react-tasks/</a>.</p>
         </div>
-
-        <!-- SOCIAL MEDIA -->
-        <section id="social" class="social">
-            <p>¡Sígueme en mis redes!</p>
-            <p>¿Quieres contactarme? Estas redes también sirven!</p>
-            <div class="links">
-                <a href="https://twitter.com/jesusgameroom" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.youtube.com/channel/UCdteRYDY0M3xjRQD7YhRA1A" target="_blank">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <a href="https://www.instagram.com/yisusgaming18/" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
-        </section>
-
-    </div>
-
-    <div class="footer-links">
-        <div class="footer-container">
-            <ul>
-                <li>
-                    <a href="#">Principal</a>
-                </li>
-                <li>
-                    <a href="#">Proyectos en desarrollo</a>
-                </li>
-                <li>
-                    <a href="#">Programas y Aplicaciones</a>
-                </li>
-                <li>
-                    <a href="project-info.html">Información proyectos</a>
-                </li>
-            </ul>
-            <ul>
-                <p>Sitio web creado por Yisus. Muchas gracias por visitar!</p>
-                <li>
-                    <a id="nav-go-back" href="#nav-main">Volver a navegación</a>
-                </li>
-            </ul>
+        <div class="card hidden hidden-up">
+            <h2 class="card-title">Sobre la página</h2>
+            <p class="card-body">En esta página encontraras todos mis proyectos e información de los mismos, descarga de mis aplicaciones, muchos datos sobre mí y un pequeño blog con publicaciones!</p>
+            <p>La página la cree <strong>yo mismo</strong> usando <strong>HTML, CSS y JavaScript Vanilla</strong>.</p>
         </div>
-    </div>
+        <div class="card hidden hidden-left">
+            <h2 class="card-title">Información sobre Contacto</h2>
+            <p class="card-body">Contactar conmigo es fácil y hay varias vías por donde puedes hacerlo, haz clic en "Contacto" en la navegación para ver todas.</p>
+            <p>Suelo responder más rápidamente en mensaje directos de <strong>Twitter</strong> o solicitudes en <strong>Discord</strong>.</p>
+            <p>Pero recomiendo que me contactes a través de <strong>correo electrónico</strong>.</p>
+        </div>
+    </section>
+
+    <hr class="section-div">
+
+    <h1 class="hidden hidden-down" id="newest-post-label">Nuevas Publicaciones</h1>
+
+    <section class="newest-post" id="posts-container">
+        <div class="card hidden hidden-left post bg-30" style="overflow-y: scroll;">
+            <h2 class="card-title"><strong style="color: lightcoral;">No se encontro la publicación</strong></h2>
+            <p class="card-body"><strong style="color: lightcoral;">No hay ninguna publicación para poner aquí.</strong></p>
+        </div>
+        <div class="card hidden hidden-left post bg-30" style="overflow-y: scroll;">
+            <h2 class="card-title"><strong style="color: lightcoral;">No se encontro la publicación</strong></h2>
+            <p class="card-body"><strong style="color: lightcoral;">No hay ninguna publicación para poner aquí.</strong></p>
+        </div>
+        <div class="card hidden hidden-left post bg-30" style="overflow-y: scroll;">
+            <h2 class="card-title"><strong style="color: lightcoral;">No se encontro la publicación</strong></h2>
+            <p class="card-body"><strong style="color: lightcoral;">No hay ninguna publicación para poner aquí.</strong></p>
+        </div>
+        <div class="card hidden hidden-left post bg-30" style="overflow-y: scroll;">
+            <h2 class="card-title"><strong style="color: lightcoral;">No se encontro la publicación</strong></h2>
+            <p class="card-body"><strong style="color: lightcoral;">No hay ninguna publicación para poner aquí.</strong></p>
+        </div>
+        <div class="card hidden hidden-left post bg-30" style="overflow-y: scroll;">
+            <h2 class="card-title"><strong style="color: lightcoral;">No se encontro la publicación</strong></h2>
+            <p class="card-body"><strong style="color: lightcoral;">No hay ninguna publicación para poner aquí.</strong></p>
+        </div>
+        <div class="card hidden hidden-left post bg-30" style="overflow-y: scroll;">
+            <h2 class="card-title"><strong style="color: lightcoral;">No se encontro la publicación</strong></h2>
+            <p class="card-body"><strong style="color: lightcoral;">No hay ninguna publicación para poner aquí.</strong></p>
+        </div>
+    </section>
+
+    <hr class="section-div">
+
+    <section class="social-media">
+        <h1>Mis Redes Sociales</h1>
+        <div class="hidden hidden-left" id="social">
+            <a target="_blank" href="https://twitter.com/jesusgameroom"><i class="fa-brands fa-twitter"></i></a>
+            <a id="youtube-link" href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a target="_blank" href="https://instagram.com/yisusgaming18"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <h1>Contacto</h1>
+        <div class="hidden hidden-right" id="contact">
+            <a target="_blank" href="https://twitter.com/jesusgameroom"><i class="fa-brands fa-twitter"></i></a>
+            <p><i class="fa-brands fa-discord"></i> Yisus#8468</p>
+            <p><i class="fa-regular fa-envelope"></i> <strong>jesusgameroom@gmail.com</strong></p>
+        </div>
+    </section>
 
     <footer class="footer">
-        <h3><i class="fa-solid fa-copyright"></i> YisusGaming</h3>
+        <div id="content">
+            <div id="go-back-nav">
+                <a href="#navbar">Volver a la Navegación</a>
+            </div>
+            <div>
+                <p>Página creada por YisusGaming. Gracias por visitar!</p>
+            </div>
+        </div>
+        <p>(c) YisusGaming 2022</p>
     </footer>
 
-    <!-- SCROLL REVEAL -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/3cba7f2206.js" crossorigin="anonymous"></script>
     <!-- CUSTOM JS -->
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" type="module"></script>
 
 </body>
 </html>
