@@ -18,6 +18,11 @@ const posts = [
         id: 3,
         title: 'Listo en <br>teléfonos!',
         body: 'Sí, así es! La página ya debería estar preparada para ser vista en teléfonos móviles. Soporta resoluciones de <strong>850px</strong> > <strong>550px!</strong>'
+    },
+    {
+        id: 4,
+        title: 'Creo que debería añadir marcas de tiempo a las publicaciones...',
+        body: 'La verdad no estoy seguro, pero añadir <strong>marcas de tiempo</strong> podría quedar bastante bien'
     }
 ];
 
