@@ -23,6 +23,11 @@ const posts = [
         id: 4,
         title: 'Creo que debería añadir marcas de tiempo a las publicaciones...',
         body: 'La verdad no estoy seguro, pero añadir <strong>marcas de tiempo</strong> podría quedar bastante bien'
+    },
+    {
+        id: 5,
+        title: 'Cambios en la<br/>versión de teléfonos',
+        body: 'Estoy pensado en hacer cambios en la versión para teléfonos, he estado viendo y el <strong>rendimiento</strong> en teléfonos al moverse por la página cae mucho.<br/>Probablemente elimine los efectos en teléfonos.'
     }
 ];
 
