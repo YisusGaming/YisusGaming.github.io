@@ -30,6 +30,11 @@
     align-items: center;
 }
 
+.banner-container img {
+    width: calc(601px/1.5);
+    height: calc(100px/1.5);
+}
+
 .navbar-container {
     display: flex;
     justify-content: center;

@@ -32,21 +32,21 @@ if (youtubeLink) {
 /* Blog Html */
 const postList = document.getElementById("post-list");
 posts.forEach((post) => {
-    const template = `<div id="${post.id}" class="card"><h2 class="card-title">${post.title}</h2><p class="card-body" style="font-size:1.2rem;">${post.body}</p></div>`;
+    const template = `<div id="${post.id}" class="card"><h2 class="card-title">${post.title}</h2><p class="card-body" style="font-size:1.2rem;">${post.body}</p><br/><strong style="position: absolute; color:rgb(255, 255, 255, .5);">${post.date}</strong></div>`;
     if (postList) { postList.innerHTML = template + postList.innerHTML; }
 });
 
 /* Projects Info Html */
 const projectList = document.getElementById("project-list");
 projects.forEach((project) => {
-    const template = `<div class="card bg-30"><h2 class="card-title">${project.title}</h2><div style="display: flex; justify-content: center; aling-items: center;"><img src="${project.img.src}" alt="${project.img.alt}" style="max-height: 720px; max-width: 800px;"></div><p class="card-body" style="font-size:1.5rem">${project.desc}</p></div>`;
+    const template = `<div class="card bg-30"><h2 class="card-title">${project.title}</h2><div style="display: flex; justify-content: center; aling-items: center;"><img class="project-img" src="${project.img.src}" alt="${project.img.alt}" style="max-height: 720px; max-width: 800px;"></div><p class="card-body" style="font-size:1.5rem">${project.desc}</p></div>`;
     if (projectList) { projectList.innerHTML = template + projectList.innerHTML; }
 });
 
 /* Dev Projects */
 const devProjectList = document.getElementById("dev-project-list");
 devProjects.forEach((project) => {
-    const template = `<div class="card bg-30"><h2 class="card-title">${project.title}</h2><div style="display: flex; justify-content: center; aling-items: center;"><img src="${project.img.src}" alt="${project.img.alt}" style="max-height: 720px; max-width: 800px;"></div><p class="card-body" style="font-size:1.5rem">${project.desc}</p></div>`;
+    const template = `<div class="card bg-30"><h2 class="card-title">${project.title}</h2><div style="display: flex; justify-content: center; aling-items: center;"><img class="project-img" src="${project.img.src}" alt="${project.img.alt}" style="max-height: 720px; max-width: 800px;"></div><p class="card-body" style="font-size:1.5rem">${project.desc}</p></div>`;
     if (devProjectList) { devProjectList.innerHTML = template + devProjectList.innerHTML; }
 });
 
