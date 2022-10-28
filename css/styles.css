@@ -405,6 +405,10 @@ a.disabled:hover, a.disabled:active {
         justify-content: center;
         align-items: center;
     }
+
+    .project-img {
+        display: none;
+    }
 }
 
 @media (max-width:580px) {
@@ -419,6 +423,13 @@ a.disabled:hover, a.disabled:active {
     .social-media #contact {
         display: grid;
         grid-template-rows: repeat(3, 1fr);
+    }
+
+    .hidden-up,
+    .hidden-down,
+    .hidden-left,
+    .hidden-right {
+        transition: none;
     }
     
 }
