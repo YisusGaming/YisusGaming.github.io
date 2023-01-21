@@ -41,6 +41,12 @@ const posts = [
         title: 'Marcas de tiempo añadidas!',
         body: 'Por fin, junto a otros cambios, he añadido las <strong>marcas de tiempo</strong> a las publicaciones!<br/><br/><span style="color: rgba(255, 255, 255, .5);">Las marcas de tiempo solo se muestran en la página del <a href="blog.html">Blog</a>.</span>',
         date: '27 de Octubre de 2022.<br/>27-10-2022.'
+    },
+    {
+        id: 7,
+        title: 'Cambios Importantes...',
+        body: 'Primero que nada, ¡Feliz año nuevo!<br/>Ya sé, feliz año nuevo retrasado, pero lo importante es que lo haya dicho!<br/>En fin, como dice el título de esta publicación, estoy preparando algunos cambios importantes con respecto a la página, pronto lo verán!',
+        date: '21 de Enero de 2023.<br/>21-01-2023'
     }
 ];
 
