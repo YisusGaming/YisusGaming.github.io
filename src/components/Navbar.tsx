@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 
 export default function Navbar() {
     return (
-        <nav>
+        <nav className='navbar'>
             <ul>
                 <li>
                     <NavLink to="/">Principal</NavLink>
