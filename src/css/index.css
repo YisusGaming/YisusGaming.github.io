@@ -23,3 +23,31 @@ body {
     background: var(--bg-primary);
     color: var(--text-primary);
 }
+
+.navbar {
+    background: var(--bg-tertiary);
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.navbar ul li {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    list-style: none;
+}
+
+.navbar ul li a {
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color 250ms;
+}
+
+.navbar ul li a:hover {
+    color: #ffffff;
+}
