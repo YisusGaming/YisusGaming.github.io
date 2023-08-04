@@ -2,8 +2,12 @@
 
 :root {
     --bg-primary: #101020;
+    --bg-primary-light: #202020;
+    --bg-primary-darker: #080810;
     --bg-secondary: #2ed92e;
+    --bg-secondary-darker: #156215;
     --bg-tertiary: #3838d4;
+    --bg-tertiary-darker: #18185b;
     --text-primary: #d7d7d7;
     --text-warn: #e3e325;
     --text-danger: #d62121;
@@ -16,7 +20,19 @@
     padding: 0;
 }
 
+.wrap-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: content;
+}
+
 body {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+        "navbar"
+        "content";
     font-family: 'Josefin Sans', sans-serif;
     height: 100vh;
     width: 100vw;
@@ -25,6 +41,7 @@ body {
 }
 
 .navbar {
+    grid-area: navbar;
     background: var(--bg-tertiary);
 }
 
@@ -50,4 +67,29 @@ body {
 
 .navbar ul li a:hover {
     color: #ffffff;
+}
+
+.welcome-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    height: 400px;
+    width: 700px;
+}
+
+.welcome-card h1 {
+    margin-bottom: 20px;
+}
+
+.welcome-card p {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.welcome-card h3 {
+    color: var(--text-link);
+    opacity: .6;
 }
