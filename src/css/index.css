@@ -107,6 +107,14 @@ body {
     animation: scroll_down_animation 2s infinite;
 }
 
+#my-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70vh;
+}
+
 @keyframes scroll_down_animation {
     0% {
         background-color: #e3e32525;
