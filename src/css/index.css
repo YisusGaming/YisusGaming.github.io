@@ -20,11 +20,28 @@
     padding: 0;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text-primary);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: #d7d7d750;
+}
+
 .wrap-center {
     display: flex;
     justify-content: center;
     align-items: center;
     grid-area: content;
+}
+
+.welcome-section {
+    height: 100vh;
 }
 
 body {
@@ -33,6 +50,7 @@ body {
     grid-template-areas: 
         "navbar"
         "content";
+    overflow-x: hidden;
     font-family: 'Josefin Sans', sans-serif;
     height: 100vh;
     width: 100vw;
