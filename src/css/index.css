@@ -93,6 +93,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
+    transform: translateY(-45px);
     text-align: center;
     height: 400px;
     width: 700px;
@@ -119,7 +120,7 @@ body {
     display: flex;
     justify-content: space-around;
     color: #d7d7d750;
-    background-color: #e3e32525;
+    background-color: #e3e32510;
     text-align: center;
     font-size: 2.6rem;
     transition: opacity 500ms;
@@ -136,11 +137,11 @@ body {
 
 @keyframes scroll_down_animation {
     0% {
-        background-color: #e3e32525;
+        background-color: #e3e32510;
         color: #d7d7d750;
     }
     50% {
-        background-color: #e3e32530;
+        background-color: #e3e3251a;
         color: #d7d7d770;
     }
 }
