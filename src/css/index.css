@@ -130,11 +130,53 @@ body {
 
 #my-content {
     display: flex;
-    grid-area: content;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
+    grid-area: content;
     height: 100vh;
+}
+
+#my-content aside h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 4rem;
+}
+
+#my-content aside p {
+    font-family: 'Raleway', sans-serif;
+    color: #d7d7d750;
+    font-size: 1.5rem;
+}
+
+.content-cards,
+.content-card {
+    width: 60vmin;
+    aspect-ratio: 5 / 7;
+}
+
+.content-card {
+    position: absolute;
+    border-radius: 1vmin;
+    cursor: pointer;
+    transition: transform 600ms;
+}
+
+.content-card:nth-child(1) {
+    background: var(--bg-tertiary);
+    transform: translateX(-20%) rotate(-5deg);
+}
+
+.content-card:nth-child(2) {
+    background: var(--bg-tertiary-darker);
+    transform: rotate(5deg);
+}
+
+.content-card:nth-child(1):hover {
+    transform: translateX(-105%) rotate(5deg);
+}
+
+.content-card:nth-child(2):hover {
+    transform: rotate(-5deg);
 }
 
 @keyframes scroll_down_animation {
