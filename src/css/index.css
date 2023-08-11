@@ -37,18 +37,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-area: content;
 }
 
 .welcome-section {
     height: 100vh;
+    grid-area: welcome;
 }
 
 body {
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto 1fr 1fr;
     grid-template-areas: 
         "navbar"
+        "welcome"
         "content";
     overflow-x: hidden;
     font-family: 'Josefin Sans', sans-serif;
@@ -129,10 +130,11 @@ body {
 
 #my-content {
     display: flex;
+    grid-area: content;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 70vh;
+    height: 100vh;
 }
 
 @keyframes scroll_down_animation {
