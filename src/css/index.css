@@ -93,3 +93,27 @@ body {
     color: var(--text-link);
     opacity: .6;
 }
+
+#scroll-down {
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    color: #d7d7d750;
+    background-color: #e3e32525;
+    text-align: center;
+    font-size: 2.6rem;
+    animation: scroll_down_animation 2s infinite;
+}
+
+@keyframes scroll_down_animation {
+    0% {
+        background-color: #e3e32525;
+        color: #d7d7d750;
+    }
+    50% {
+        background-color: #e3e32530;
+        color: #d7d7d770;
+    }
+}
