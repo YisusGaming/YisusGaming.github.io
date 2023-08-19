@@ -184,18 +184,23 @@ body {
 
 .content-card {
     position: absolute;
+    background: black;
     border-radius: 1vmin;
     cursor: pointer;
     transition: transform 600ms;
 }
 
 .content-card:nth-child(1) {
-    background: var(--bg-tertiary);
+    background-image: url("../assets/Youtube\ card.png");
+    background-repeat: no-repeat;
+    background-size: contain;
     transform: translateX(-20%) rotate(-5deg);
 }
 
 .content-card:nth-child(2) {
-    background: var(--bg-tertiary-darker);
+    background-image: url("../assets/github\ card.png");
+    background-repeat: no-repeat;
+    background-size: contain;
     transform: rotate(5deg);
 }
 
