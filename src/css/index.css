@@ -70,8 +70,18 @@ body {
 }
 
 .navbar {
+    position: relative;
     grid-area: navbar;
     background: var(--bg-tertiary);
+}
+
+.navbar .navbar-bars {
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 5rem;
 }
 
 .navbar ul {
@@ -106,6 +116,10 @@ body {
     transform: scaleX(.4) scaleY(.3) translate(-100px, -200px);
 }
 
+.navbar.navbar-floating .navbar-bars {
+    display: block;
+}
+
 .navbar.navbar-floating ul {
     display: flex;
     flex-direction: column;
@@ -120,6 +134,10 @@ body {
 .navbar.navbar-floating:hover {
     transform: scale(1);
     border-radius: 0;
+}
+
+.navbar.navbar-floating:hover .navbar-bars {
+    display: none;
 }
 
 .navbar.navbar-floating:hover ul {
@@ -228,6 +246,21 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 1.3rem;
+}
+
+#contact .contact-options {
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+    background: var(--bg-primary-darker);
+    margin: 20px 0;
+    padding: 20px;
+}
+
+#contact .contact-options a {
+    font-size: 1.3rem;
+    color: var(--text-primary);
+    text-decoration: none;
 }
 
 .content-cards,
