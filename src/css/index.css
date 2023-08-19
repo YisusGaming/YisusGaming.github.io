@@ -190,6 +190,10 @@ body {
     transition: transform 600ms;
 }
 
+.content-card:active {
+    box-shadow: 0 0 5px 10px white;
+}
+
 .content-card:nth-child(1) {
     background-image: url("../assets/Youtube\ card.png");
     background-repeat: no-repeat;
