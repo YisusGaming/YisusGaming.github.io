@@ -81,20 +81,20 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
-    font-size: 5rem;
+    font-size: 12vmin;
 }
 
 .navbar ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 3vmin;
 }
 
 .navbar ul li {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
-    font-size: 1.4rem;
+    font-size: 4vmin;
     list-style: none;
 }
 
@@ -110,7 +110,9 @@ body {
 
 .navbar.navbar-floating {
     position: fixed;
-    margin: 10px;
+    margin: 0.6vmin;
+    top: 0;
+    left: 0;
     z-index: 2;
     transition: transform 780ms cubic-bezier(0,.85,0,.96);
     transform: scaleX(.4) scaleY(.3) translate(-100px, -200px);
@@ -128,7 +130,7 @@ body {
 }
 
 .navbar.navbar-floating ul li {
-    margin: 6px 0;
+    margin: 1vmin 0;
 }
 
 .navbar.navbar-floating:hover {
@@ -157,15 +159,20 @@ body {
 }
 
 .welcome-card h1 {
+    font-size: 6vmin;
+    min-width: 100vmin;
     margin-bottom: 20px;
 }
 
 .welcome-card p {
-    font-size: 1.4rem;
+    font-size: 3vmin;
+    min-width: 100vmin;
     margin-bottom: 10px;
 }
 
 .welcome-card h3 {
+    font-size: 3.5vmin;
+    min-width: 100vmin;
     color: var(--text-link);
     opacity: .6;
 }
@@ -179,7 +186,7 @@ body {
     color: #d7d7d750;
     background-color: #e3e32510;
     text-align: center;
-    font-size: 2.6rem;
+    font-size: 6.5vmin;
     transition: opacity 500ms;
     animation: scroll_down_animation 2s infinite;
 }
@@ -195,13 +202,13 @@ body {
 
 #my-content aside h1 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 4rem;
+    font-size: 10vmin;
 }
 
 #my-content aside p {
     font-family: 'Raleway', sans-serif;
     color: #d7d7d750;
-    font-size: 1.5rem;
+    font-size: 3.5vmin;
 }
 
 #whoami {
@@ -216,14 +223,14 @@ body {
 
 #whoami h1 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 4rem;
+    font-size: 10vmin;
 }
 
 #whoami p {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     line-height: 140%;
-    font-size: 1.3rem;
+    font-size: 3.3vmin;
     margin: 10px 60px 0 60px;
 }
 
@@ -239,13 +246,13 @@ body {
 
 #contact h1 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 4rem;
+    font-size: 10vmin;
 }
 
 #contact p {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 3.3vmin;
 }
 
 #contact .contact-options {
@@ -253,14 +260,18 @@ body {
     justify-content: space-around;
     width: 50vw;
     background: var(--bg-primary-darker);
-    margin: 20px 0;
-    padding: 20px;
+    margin: 3.4vmin 0;
+    padding: 3.4vmin;
 }
 
 #contact .contact-options a {
-    font-size: 1.3rem;
+    font-size: 4vmin;
     color: var(--text-primary);
     text-decoration: none;
+}
+
+#contact .contact-options h2 {
+    font-size: 4vmin;
 }
 
 .content-cards,
