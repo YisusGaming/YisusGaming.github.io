@@ -47,17 +47,12 @@
     opacity: .4;
 }
 
-.welcome-section {
-    height: 100vh;
-    grid-area: welcome;
-}
-
 body {
     display: grid;
     grid-template-rows: auto 1fr 1fr;
     grid-template-areas: 
         "navbar"
-        "welcome"
+        "myself"
         "content"
         "whoami"
         "contact";
@@ -146,35 +141,31 @@ body {
     opacity: 1;
 }
 
-.welcome-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.myself-section {
+    height: 100vh;
+    grid-area: myself;
+}
+
+.myself-section #picture {
+    position: relative;
+}
+
+.myself-section #picture img {
+    width: 90vmin;
+    aspect-ratio: 16 / 11;
+    transform: rotateZ(-3deg);
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.myself-section #picture::before {
+    content: '';
+    position: absolute;
     height: 100%;
-    transform: translateY(-45px);
-    text-align: center;
-    height: 400px;
-    width: 700px;
-}
-
-.welcome-card h1 {
-    font-size: 6vmin;
-    min-width: 100vmin;
-    margin-bottom: 20px;
-}
-
-.welcome-card p {
-    font-size: 3vmin;
-    min-width: 100vmin;
-    margin-bottom: 10px;
-}
-
-.welcome-card h3 {
-    font-size: 3.5vmin;
-    min-width: 100vmin;
-    color: var(--text-link);
-    opacity: .6;
+    width: 100%;
+    background: var(--bg-secondary);
+    transform: rotateZ(3deg);
+    border-radius: 8px;
 }
 
 #scroll-down {
