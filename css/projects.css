@@ -36,8 +36,8 @@
 
 .repo {
     background: var(--bg-primary-darker);
-    padding: 16px;
-    margin: 10px;
+    padding: 3vmin;
+    margin: 2.5vmin;
     width: max-content;
     border-radius: 8px;
 }
@@ -47,7 +47,16 @@
 }
 
 .repo h1 {
-    margin-bottom: 12px;
+    font-size: 5vmin;
+    margin-bottom: 2vmin;
+}
+
+.repo h3 {
+    font-size: 3vmin;
+}
+
+.repo h4 {
+    font-size: 2.7vmin;
 }
 
 .repo h1 a {
@@ -64,7 +73,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 26px;
+    margin-top: 5vmin;
 }
 
 .repo .stats #forks {
@@ -92,5 +101,15 @@
 
     100% {
         background: var(--bg-primary-darker);
+    }
+}
+
+@media (max-width: 800px) {
+    .featured-repos {
+        flex-direction: column;
+    }
+
+    .repo {
+        max-width: 80vmin;
     }
 }
