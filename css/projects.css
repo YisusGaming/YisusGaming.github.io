@@ -16,6 +16,19 @@
     --chunk-size: 100vh;
 }
 
+#go-back {
+    position: absolute;
+    color: var(--text-warn);
+    font-size: 10vmin;
+    left: 10px;
+    top: 20px;
+    transition: 250ms;
+}
+
+#go-back:hover {
+    opacity: .6;
+}
+
 .repos {
     display: flex;
     flex-direction: column;
