@@ -1,0 +1,59 @@
+@import "base.css";
+
+:root {
+    --bg-primary: #101020;
+    --bg-primary-light: #202020;
+    --bg-primary-darker: #080810;
+    --bg-secondary: #2ed92e;
+    --bg-secondary-darker: #156215;
+    --bg-tertiary: #3838d4;
+    --bg-tertiary-darker: #18185b;
+    --text-primary: #d7d7d7;
+    --text-secondary: #9191ff;
+    --text-warn: #e3e325;
+    --text-danger: #d62121;
+    --text-link: #59eb82;
+    --chunk-size: 100vh;
+}
+
+.repos {
+    display: flex;
+    flex-direction: column;
+}
+
+.repo {
+    background: var(--bg-primary-darker);
+    padding: 16px;
+    margin: 10px;
+    width: max-content;
+    border-radius: 8px;
+}
+
+.repo h1 {
+    margin-bottom: 12px;
+}
+
+.repo h1 a {
+    text-decoration: none;
+    color: var(--text-link);
+    transition: 250ms;
+}
+
+.repo h1 a:hover {
+    opacity: .6;
+}
+
+.repo .stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 26px;
+}
+
+.repo .stats #forks {
+    color: var(--text-secondary);
+}
+
+.repo .stats #stars {
+    color: var(--text-warn);
+}
