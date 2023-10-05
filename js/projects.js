@@ -13,7 +13,7 @@ fetch('https://api.github.com/users/YisusGaming/repos')
             }
 
             const repoTemplate = `<div class="repo">
-                <h1>
+                <h1 id="${repo.name}">
                     <a target="_blank" href="${repo.html_url}">${repo.name}</a>
                 </h1>
                 <h3>${description}</h3>

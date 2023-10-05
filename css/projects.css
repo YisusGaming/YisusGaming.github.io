@@ -29,6 +29,10 @@
     border-radius: 8px;
 }
 
+.repo:has(h1:target) {
+    animation: target_repo 1s infinite;
+}
+
 .repo h1 {
     margin-bottom: 12px;
 }
@@ -56,4 +60,24 @@
 
 .repo .stats #stars {
     color: var(--text-warn);
+}
+
+.featured-repos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes target_repo {
+    0% {
+        background: var(--bg-primary-darker);
+    }
+
+    50% {
+        background: var(--bg-tertiary-darker);
+    }
+
+    100% {
+        background: var(--bg-primary-darker);
+    }
 }
