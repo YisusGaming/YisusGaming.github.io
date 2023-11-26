@@ -1,1 +1,39 @@
 @import "base.css";
+
+:root {
+    --bg-primary: #101020;
+    --bg-primary-light: #202020;
+    --bg-primary-darker: #080810;
+    --bg-secondary: #2ed92e;
+    --bg-secondary-darker: #156215;
+    --bg-tertiary: #3838d4;
+    --bg-tertiary-darker: #18185b;
+    --text-primary: #d7d7d7;
+    --text-secondary: #9191ff;
+    --text-warn: #e3e325;
+    --text-danger: #d62121;
+    --text-link: #59eb82;
+    --chunk-size: 100vh;
+}
+
+#go-back {
+    position: absolute;
+    color: var(--text-secondary);
+    font-size: 10vmin;
+    left: 10px;
+    top: 20px;
+    transition: 250ms;
+}
+
+#go-back:hover {
+    opacity: .6;
+}
+
+.bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 35px;
+}
