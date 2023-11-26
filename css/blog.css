@@ -42,7 +42,8 @@
     position: relative;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -62,6 +63,45 @@
     font-size: 8vmin;
     color: var(--text-danger);
     transform: translate(-50%, -50%);
+}
+
+.post {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "title"
+        "body"
+        "date";
+    text-align: center;
+    height: 80%;
+    width: 80%;
+    margin: 20px;
+    padding: 20px;
+    background: var(--bg-primary-darker);
+}
+
+.post h1 {
+    grid-area: title;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 45px;
+    margin-bottom: 40px;
+    padding: 8px;
+    background: var(--bg-tertiary);
+    border-radius: 10px;
+}
+
+.post #body {
+    grid-area: body;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    padding: 8px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+}
+
+.post h3 {
+    grid-area: date;
 }
 
 @keyframes fade {
